@@ -1,7 +1,11 @@
 class Dice
 
+  def initialize(number_of_sides)
+    @number_of_sides = number_of_sides
+  end
+
   def number_of_sides
-    6
+    @number_of_sides
   end
 
   def roll
@@ -9,11 +13,13 @@ class Dice
   end
 
   def get_rolls
-    []
+    rolls = Array.new
+    rolls.push(roll)
   end
 end
 
 
 
-dice = Dice.new
-dice.roll
+dice = Dice.new(6)
+dice2 = Dice.new(10)
+dice3 = Dice.new(3)
