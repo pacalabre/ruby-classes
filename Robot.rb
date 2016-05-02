@@ -1,7 +1,7 @@
 
 class Robot
 
-  def initalize(name, purpose)
+  def initialize(name, purpose)
     @name = name
     @purpose = purpose
   end
@@ -15,13 +15,13 @@ class Robot
   end
 
   def greet
-    puts "beep boop"
+    puts "beep boop, My name is #{name} I am a #{purpose} Robot"
   end
 
 
 
 end
 
-robot_Mike = Robot.new
+robot_Mike = Robot.new("mike", "worker")
 
 robot_Mike.greet
